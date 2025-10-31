@@ -5,3 +5,7 @@ scipy==1.11.4
 sentence-transformers==2.2.2
 faiss-cpu==1.7.4
 gunicorn==21.2.0
+
+# Ensure CPU-only PyTorch build (needed for sentence-transformers)
+torch==2.0.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
