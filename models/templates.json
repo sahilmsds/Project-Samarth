@@ -1,0 +1,2578 @@
+[
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andaman And Nicobar Islands and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andaman And Nicobar Islands",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Andhra Pradesh and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Andhra Pradesh",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Arunachal Pradesh and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Arunachal Pradesh",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Assam and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Assam",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Bihar and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Bihar",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chandigarh and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chandigarh",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Chhattisgarh and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Chhattisgarh",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Dadra And Nagar Haveli and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Dadra And Nagar Haveli",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Goa and Gujarat for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Goa",
+        "Gujarat"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Andaman And Nicobar Islands for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Andaman And Nicobar Islands"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Andhra Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Andhra Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Arunachal Pradesh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Arunachal Pradesh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Assam for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Assam"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Bihar for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Bihar"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Chandigarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Chandigarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Chhattisgarh for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Chhattisgarh"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Dadra And Nagar Haveli for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Dadra And Nagar Haveli"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Compare average annual rainfall in Gujarat and Goa for the last 10 years and list top 5 crops",
+    "intent": "rainfall_crop_comparison",
+    "entities": {
+      "states": [
+        "Gujarat",
+        "Goa"
+      ],
+      "crops": [],
+      "years": "last 10"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Which district in Andaman And Nicobar Islands has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andhra Pradesh has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Arunachal Pradesh has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Assam has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Assam"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Bihar has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Bihar"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chandigarh has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Chandigarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chhattisgarh has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Chhattisgarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Dadra And Nagar Haveli has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Goa has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Goa"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Gujarat has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Gujarat"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Haryana has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Haryana"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Himachal Pradesh has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jammu And Kashmir has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jharkhand has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Jharkhand"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Karnataka has highest Rice production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Rice",
+      "state": "Karnataka"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andaman And Nicobar Islands has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andhra Pradesh has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Arunachal Pradesh has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Assam has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Assam"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Bihar has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Bihar"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chandigarh has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Chandigarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chhattisgarh has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Chhattisgarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Dadra And Nagar Haveli has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Goa has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Goa"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Gujarat has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Gujarat"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Haryana has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Haryana"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Himachal Pradesh has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jammu And Kashmir has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jharkhand has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Jharkhand"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Karnataka has highest Wheat production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Wheat",
+      "state": "Karnataka"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andaman And Nicobar Islands has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andhra Pradesh has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Arunachal Pradesh has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Assam has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Assam"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Bihar has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Bihar"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chandigarh has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Chandigarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chhattisgarh has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Chhattisgarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Dadra And Nagar Haveli has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Goa has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Goa"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Gujarat has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Gujarat"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Haryana has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Haryana"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Himachal Pradesh has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jammu And Kashmir has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jharkhand has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Jharkhand"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Karnataka has highest Cotton production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Cotton",
+      "state": "Karnataka"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andaman And Nicobar Islands has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andhra Pradesh has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Arunachal Pradesh has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Assam has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Assam"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Bihar has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Bihar"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chandigarh has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Chandigarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chhattisgarh has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Chhattisgarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Dadra And Nagar Haveli has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Goa has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Goa"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Gujarat has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Gujarat"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Haryana has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Haryana"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Himachal Pradesh has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jammu And Kashmir has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jharkhand has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Jharkhand"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Karnataka has highest Sugarcane production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Sugarcane",
+      "state": "Karnataka"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andaman And Nicobar Islands has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Andhra Pradesh has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Arunachal Pradesh has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Assam has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Assam"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Bihar has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Bihar"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chandigarh has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Chandigarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Chhattisgarh has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Chhattisgarh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Dadra And Nagar Haveli has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Goa has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Goa"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Gujarat has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Gujarat"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Haryana has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Haryana"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Himachal Pradesh has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jammu And Kashmir has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Jharkhand has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Jharkhand"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Which district in Karnataka has highest Maize production",
+    "intent": "district_production",
+    "entities": {
+      "crop": "Maize",
+      "state": "Karnataka"
+    },
+    "complexity": "medium"
+  },
+  {
+    "query": "Analyze production trend of Rice over the last decade and correlate with rainfall",
+    "intent": "trend_correlation",
+    "entities": {
+      "crop": "Rice",
+      "years": "decade"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Analyze production trend of Wheat over the last decade and correlate with rainfall",
+    "intent": "trend_correlation",
+    "entities": {
+      "crop": "Wheat",
+      "years": "decade"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Analyze production trend of Cotton over the last decade and correlate with rainfall",
+    "intent": "trend_correlation",
+    "entities": {
+      "crop": "Cotton",
+      "years": "decade"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Analyze production trend of Jowar over the last decade and correlate with rainfall",
+    "intent": "trend_correlation",
+    "entities": {
+      "crop": "Jowar",
+      "years": "decade"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Analyze production trend of Bajra over the last decade and correlate with rainfall",
+    "intent": "trend_correlation",
+    "entities": {
+      "crop": "Bajra",
+      "years": "decade"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Andaman And Nicobar Islands",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Andhra Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Arunachal Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Assam",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Assam"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Bihar",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Bihar"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Chandigarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Chandigarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Chhattisgarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Chhattisgarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Dadra And Nagar Haveli",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Goa",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Goa"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Millets over Rice in Gujarat",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Millets",
+        "Rice"
+      ],
+      "state": "Gujarat"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Andaman And Nicobar Islands",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Andhra Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Arunachal Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Assam",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Assam"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Bihar",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Bihar"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Chandigarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Chandigarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Chhattisgarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Chhattisgarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Dadra And Nagar Haveli",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Goa",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Goa"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Pulses over Wheat in Gujarat",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Pulses",
+        "Wheat"
+      ],
+      "state": "Gujarat"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Andaman And Nicobar Islands",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Andhra Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Arunachal Pradesh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Assam",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Assam"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Bihar",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Bihar"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Chandigarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Chandigarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Chhattisgarh",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Chhattisgarh"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Dadra And Nagar Haveli",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Goa",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Goa"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Provide data-backed arguments to promote Cotton over Sugarcane in Gujarat",
+    "intent": "policy_recommendation",
+    "entities": {
+      "crops": [
+        "Cotton",
+        "Sugarcane"
+      ],
+      "state": "Gujarat"
+    },
+    "complexity": "high"
+  },
+  {
+    "query": "Top 10 crops in Andaman And Nicobar Islands",
+    "intent": "ranking",
+    "entities": {
+      "state": "Andaman And Nicobar Islands"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Andhra Pradesh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Andhra Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Arunachal Pradesh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Arunachal Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Assam",
+    "intent": "ranking",
+    "entities": {
+      "state": "Assam"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Bihar",
+    "intent": "ranking",
+    "entities": {
+      "state": "Bihar"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Chandigarh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Chandigarh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Chhattisgarh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Chhattisgarh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Dadra And Nagar Haveli",
+    "intent": "ranking",
+    "entities": {
+      "state": "Dadra And Nagar Haveli"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Goa",
+    "intent": "ranking",
+    "entities": {
+      "state": "Goa"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Gujarat",
+    "intent": "ranking",
+    "entities": {
+      "state": "Gujarat"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Haryana",
+    "intent": "ranking",
+    "entities": {
+      "state": "Haryana"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Himachal Pradesh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Himachal Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Jammu And Kashmir",
+    "intent": "ranking",
+    "entities": {
+      "state": "Jammu And Kashmir"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Jharkhand",
+    "intent": "ranking",
+    "entities": {
+      "state": "Jharkhand"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Karnataka",
+    "intent": "ranking",
+    "entities": {
+      "state": "Karnataka"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Kerala",
+    "intent": "ranking",
+    "entities": {
+      "state": "Kerala"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Madhya Pradesh",
+    "intent": "ranking",
+    "entities": {
+      "state": "Madhya Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Maharashtra",
+    "intent": "ranking",
+    "entities": {
+      "state": "Maharashtra"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Manipur",
+    "intent": "ranking",
+    "entities": {
+      "state": "Manipur"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Top 10 crops in Meghalaya",
+    "intent": "ranking",
+    "entities": {
+      "state": "Meghalaya"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Show production by state",
+    "intent": "state_production",
+    "entities": {},
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Andaman & Nicobar Islands",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Andaman & Nicobar Islands"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Arunachal Pradesh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Arunachal Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Assam & Meghalaya",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Assam & Meghalaya"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Bihar",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Bihar"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Chhattisgarh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Chhattisgarh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Coastal Andhra Pradesh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Coastal Andhra Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Coastal Karnataka",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Coastal Karnataka"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in East Madhya Pradesh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "East Madhya Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in East Rajasthan",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "East Rajasthan"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in East Uttar Pradesh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "East Uttar Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Gangetic West Bengal",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Gangetic West Bengal"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Gujarat Region",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Gujarat Region"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Haryana Delhi & Chandigarh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Haryana Delhi & Chandigarh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Himachal Pradesh",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Himachal Pradesh"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Jammu & Kashmir",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Jammu & Kashmir"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Jharkhand",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Jharkhand"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Kerala",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Kerala"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Konkan & Goa",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Konkan & Goa"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Lakshadweep",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Lakshadweep"
+    },
+    "complexity": "low"
+  },
+  {
+    "query": "Rainfall trend in Madhya Maharashtra",
+    "intent": "rainfall_trend",
+    "entities": {
+      "subdivision": "Madhya Maharashtra"
+    },
+    "complexity": "low"
+  }
+]

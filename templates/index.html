@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Samarth - RAG-Powered Agricultural Q&A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .rag-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.4em;
+            font-weight: normal;
+            backdrop-filter: blur(10px);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            gap: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .chat-container {
+            height: 500px;
+            overflow-y: auto;
+            padding: 30px;
+            background: #fafafa;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            align-items: flex-end;
+        }
+
+        .message.bot {
+            align-items: flex-start;
+        }
+
+        .message-content {
+            max-width: 95%;
+            padding: 15px 20px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .message.bot .message-content {
+            background: white;
+            border: 2px solid #e9ecef;
+            color: #333;
+        }
+
+        .response-section {
+            margin: 15px 0;
+        }
+
+        .response-section h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+
+        .response-section h4 {
+            color: #764ba2;
+            margin: 10px 0 5px 0;
+            font-size: 1.1em;
+        }
+
+        .data-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .data-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .data-value {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .crop-list {
+            display: grid;
+            gap: 8px;
+            margin: 10px 0;
+        }
+
+        .crop-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .crop-rank {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .sources {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e7f3ff;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .sources h4 {
+            color: #0066cc;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .sources ul {
+            margin: 5px 0 0 20px;
+            font-size: 0.85em;
+            color: #495057;
+        }
+
+        .sources li {
+            margin: 3px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 10px 12px;
+            border: 1px solid #dee2e6;
+        }
+
+        table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .input-area {
+            padding: 20px 30px;
+            background: white;
+            border-top: 1px solid #dee2e6;
+            display: flex;
+            gap: 10px;
+        }
+
+        #query-input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        #query-input:focus {
+            border-color: #667eea;
+        }
+
+        #send-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        #send-btn:hover {
+            transform: scale(1.05);
+        }
+
+        #send-btn:active {
+            transform: scale(0.95);
+        }
+
+        #send-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .suggestions {
+            padding: 15px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .suggestion-title {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .suggestion-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .chip {
+            padding: 8px 15px;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.3s;
+        }
+
+        .chip:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            width: fit-content;
+        }
+
+        .typing-indicator.show {
+            display: block;
+        }
+
+        .typing-indicator span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            margin-right: 5px;
+            animation: bounce 1.4s infinite;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .error-message {
+            color: #dc3545;
+            background: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #dc3545;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌾 Project Samarth <span class="rag-badge">RAG Powered</span></h1>
+            <p>Intelligent Q&A System using Offline Embeddings & Vector Search</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="crop-count">-</div>
+                <div class="stat-label">Crop Records</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="rain-count">-</div>
+                <div class="stat-label">Rainfall Records</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="state-count">-</div>
+                <div class="stat-label">States & UTs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="crop-types">-</div>
+                <div class="stat-label">Crop Types</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="crop-years">-</div>
+                <div class="stat-label">Crop Data Years</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="rain-years">-</div>
+                <div class="stat-label">Rainfall Years</div>
+            </div>
+        </div>
+
+        <div class="chat-container" id="chat-container">
+            <div class="message bot">
+                <div class="message-content">
+                    👋 <strong>Welcome to Project Samarth!</strong>
+                    <br><br>
+                    I use <strong>RAG (Retrieval-Augmented Generation)</strong> with sentence transformers and FAISS
+                    vector search to understand complex natural language queries—completely offline!
+                    <br><br>
+                    <strong>✨ Capabilities:</strong>
+                    <ul style="margin: 10px 0 0 20px; line-height: 1.8;">
+                        <li><strong>Multi-source synthesis:</strong> Compare rainfall + list top crops in one query</li>
+                        <li><strong>District-level analysis:</strong> Find highest/lowest producing districts</li>
+                        <li><strong>Trend correlation:</strong> Analyze production patterns with climate data</li>
+                        <li><strong>Policy insights:</strong> Generate data-backed recommendations</li>
+                        <li><strong>Fuzzy matching:</strong> Handles typos (try "Maharastra" → "Maharashtra")</li>
+                    </ul>
+                    <br>
+                    <em>🚀 All processing powered by local embeddings—no external APIs!</em>
+                </div>
+            </div>
+        </div>
+
+        <div class="suggestions">
+            <div class="suggestion-title">💡 Sample Questions (Click to Try):</div>
+            <div class="suggestion-chips">
+                <div class="chip"
+                    onclick="askQuestion('Compare average annual rainfall in Maharashtra and Punjab for the last 10 years and list top 5 most produced crops')">
+                    📊 Rainfall + Top Crops Comparison
+                </div>
+                <div class="chip"
+                    onclick="askQuestion('Which district in Karnataka has highest rice production and compare with Tamil Nadu?')">
+                    🏆 District Production Comparison
+                </div>
+                <div class="chip"
+                    onclick="askQuestion('Analyze the production trend of wheat in Punjab over the last decade and correlate with rainfall')">
+                    📈 Trend & Correlation Analysis
+                </div>
+                <div class="chip"
+                    onclick="askQuestion('Provide three data-backed arguments to promote millets over rice in Maharashtra')">
+                    💡 Policy Recommendation
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="query-input" placeholder="Ask complex questions about agriculture and climate..." />
+            <button id="send-btn" onclick="sendQuery()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Load stats on page load
+        fetch("/stats")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("crop-count").textContent = data.crop_records.toLocaleString();
+                document.getElementById("rain-count").textContent = data.rainfall_records.toLocaleString();
+                document.getElementById("state-count").textContent = data.states;
+                document.getElementById("crop-types").textContent = data.crops;
+                document.getElementById("crop-years").textContent = data.year_range_crop;
+                document.getElementById("rain-years").textContent = data.year_range_rainfall;
+            })
+            .catch(err => {
+                console.warn("Could not load stats:", err);
+                document.getElementById("crop-count").textContent = "N/A";
+                document.getElementById("rain-count").textContent = "N/A";
+                document.getElementById("state-count").textContent = "N/A";
+                document.getElementById("crop-types").textContent = "N/A";
+                document.getElementById("crop-years").textContent = "N/A";
+                document.getElementById("rain-years").textContent = "N/A";
+            });
+
+        function askQuestion(question) {
+            document.getElementById("query-input").value = question;
+            sendQuery();
+        }
+
+        async function sendQuery() {
+            const input = document.getElementById("query-input");
+            const sendBtn = document.getElementById("send-btn");
+            const query = input.value.trim();
+
+            if (!query) return;
+
+            const chatContainer = document.getElementById("chat-container");
+
+            // Disable input while processing
+            input.disabled = true;
+            sendBtn.disabled = true;
+
+            // Add user message
+            const userMsg = document.createElement("div");
+            userMsg.className = "message user";
+            userMsg.innerHTML = `<div class="message-content">${escapeHtml(query)}</div>`;
+            chatContainer.appendChild(userMsg);
+            input.value = "";
+
+            // Show typing indicator
+            const typingDiv = document.createElement("div");
+            typingDiv.className = "message bot";
+            typingDiv.innerHTML = `
+                <div class="typing-indicator show">
+                    <span></span><span></span><span></span>
+                </div>
+            `;
+            chatContainer.appendChild(typingDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            try {
+                const response = await fetch("/ask", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ query }),
+                });
+
+                const data = await response.json();
+                chatContainer.removeChild(typingDiv);
+
+                const botMsg = document.createElement("div");
+                botMsg.className = "message bot";
+                botMsg.innerHTML = `<div class="message-content">${formatResponse(data)}</div>`;
+                chatContainer.appendChild(botMsg);
+
+            } catch (error) {
+                chatContainer.removeChild(typingDiv);
+                const errorMsg = document.createElement("div");
+                errorMsg.className = "message bot";
+                errorMsg.innerHTML = `<div class="message-content error-message">❌ Error: ${error.message}</div>`;
+                chatContainer.appendChild(errorMsg);
+            }
+
+            // Re-enable input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        function formatResponse(data) {
+            const type = data.type;
+
+            // Rainfall + Crop Comparison
+            if (type === "rainfall_crop_comparison") {
+                return formatRainfallCropComparison(data.data, data.sources);
+            }
+
+            // District Comparison
+            else if (type === "district_comparison") {
+                return formatDistrictComparison(data.data, data.sources);
+            }
+
+            // Trend Correlation
+            else if (type === "trend_correlation") {
+                return formatTrendCorrelation(data.data, data.sources);
+            }
+
+            // Policy Recommendation
+            else if (type === "policy_recommendation") {
+                return formatPolicyRecommendation(data.data, data.sources);
+            }
+
+            // HTML response
+            else if (type === "html") {
+                return data.data + formatSources(data.sources);
+            }
+
+            // Text response
+            else if (type === "text") {
+                return `<pre style="white-space: pre-wrap; font-family: inherit;">${escapeHtml(data.data)}</pre>`;
+            }
+
+            // Error
+            else if (type === "error") {
+                return `<div class="error-message">⚠️ ${escapeHtml(data.data)}</div>`;
+            }
+
+            // Default
+            return `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+        }
+
+        function formatRainfallCropComparison(data, sources) {
+            const rainfall = data.rainfall || {};
+            const crops = data.crops || {};
+
+            // ✅ Filter only states (ignore difference/higher)
+            const states = Object.keys(rainfall).filter(k => typeof rainfall[k] === "object" && rainfall[k] !== null);
+
+            let html = '<h3>🌧️ Rainfall & Crop Production Comparison</h3>';
+
+            // Rainfall comparison
+            html += '<div class="data-card">';
+            html += '<h4>💧 Average Annual Rainfall (' + (data.year_range || 'all years') + ')</h4>';
+
+            states.forEach(state => {
+                const r = rainfall[state];
+                html += `
+            <div class="data-row">
+                <span class="data-label">${state}</span>
+                <span class="data-value">${r.mean?.toFixed(2)} mm ± ${r.std?.toFixed(2)}</span>
+            </div>
+        `;
+            });
+
+            // ✅ Difference & higher rainfall
+            if (rainfall.difference !== undefined && rainfall.higher) {
+                html += `
+            <div class="data-row" style="background: #e7f3ff; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                <span class="data-label">💡 Difference</span>
+                <span class="data-value">${rainfall.difference.toFixed(2)} mm | ${rainfall.higher} receives more rainfall</span>
+            </div>
+        `;
+            }
+
+            html += '</div>';
+
+            // Top crops for each state
+            states.forEach(state => {
+                const stateCrops = crops[state] || [];
+                if (stateCrops.length > 0) {
+                    html += `<div class="data-card"><h4>🌾 Top Crops in ${state}</h4><div class="crop-list">`;
+                    stateCrops.forEach((item, idx) => {
+                        html += `
+                    <div class="crop-item">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div class="crop-rank">${idx + 1}</div>
+                            <span style="font-weight: 600;">${item.crop}</span>
+                        </div>
+                        <span class="data-value">${item.production_.toLocaleString()} tonnes</span>
+                    </div>
+                `;
+                    });
+                    html += '</div></div>';
+                }
+            });
+
+            html += formatSources(sources);
+            return html;
+        }
+
+
+        function formatDistrictComparison(data, sources) {
+            let html = '<h3>🏆 District Production Comparison</h3>';
+
+            if (data.error) {
+                return `<div class="error-message">${data.error}</div>`;
+            }
+
+            const highest = data.highest;
+            const second = data.second;
+
+            html += '<div class="data-card">';
+            html += `<h4>📈 Highest Production: ${highest.crop}</h4>`;
+            html += `
+                <div class="data-row">
+                    <span class="data-label">District</span>
+                    <span class="data-value">${highest.district}, ${highest.state}</span>
+                </div>
+                <div class="data-row">
+                    <span class="data-label">Production</span>
+                    <span class="data-value">${highest.production.toLocaleString()} tonnes</span>
+                </div>
+            `;
+            html += '</div>';
+
+            if (second) {
+                html += '<div class="data-card">';
+                html += `<h4>📉 Compared With: ${second.state}</h4>`;
+                html += `
+                    <div class="data-row">
+                        <span class="data-label">District</span>
+                        <span class="data-value">${second.district}</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="data-label">Production</span>
+                        <span class="data-value">${second.production.toLocaleString()} tonnes</span>
+                    </div>
+                    <div class="data-row" style="background: #e7f3ff; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                        <span class="data-label">💡 Ratio</span>
+                        <span class="data-value">${highest.district} produces ${data.ratio}x more than ${second.district}</span>
+                    </div>
+                `;
+                html += '</div>';
+            }
+
+            html += formatSources(sources);
+            return html;
+        }
+
+        function formatTrendCorrelation(data, sources) {
+            let html = '<h3>📈 Production Trend & Climate Correlation</h3>';
+
+            html += '<div class="data-card">';
+            html += `<h4>🌾 ${data.crop} in ${data.state}</h4>`;
+            html += `<div class="data-row">
+                <span class="data-label">Time Period</span>
+                <span class="data-value">${data.years}</span>
+            </div>`;
+
+            if (data.correlation) {
+                const corr = data.correlation;
+                html += `
+                    <div class="data-row">
+                        <span class="data-label">Production Trend</span>
+                        <span class="data-value">${corr.production_trend_direction}</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="data-label">Rainfall Trend</span>
+                        <span class="data-value">${corr.rainfall_trend_direction}</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="data-label">Correlation</span>
+                        <span class="data-value">${corr.coefficient}</span>
+                    </div>
+                    <div class="data-row" style="background: #e7f3ff; margin-top: 10px; padding: 10px; border-radius: 5px;">
+                        <span class="data-label">💡 Interpretation</span>
+                        <span style="font-size: 0.9em;">${corr.interpretation}</span>
+                    </div>
+                `;
+            }
+            html += '</div>';
+
+            html += formatSources(sources);
+            return html;
+        }
+
+        function formatPolicyRecommendation(data, sources) {
+            let html = '<h3>💡 Policy Recommendation</h3>';
+
+            html += '<div class="data-card">';
+            html += `<h4>${data.recommendation}</h4>`;
+            html += `<p><strong>Region:</strong> ${data.region} | <strong>Analysis Period:</strong> ${data.time_period}</p>`;
+            html += '</div>';
+
+            data.arguments.forEach((arg, idx) => {
+                html += '<div class="data-card">';
+                html += `<h4>Argument ${idx + 1}</h4>`;
+                html += `<p><strong>${arg.argument}</strong></p>`;
+                html += '<div style="margin: 10px 0; padding: 10px; background: white; border-radius: 5px;">';
+                html += '<strong>Evidence:</strong><ul style="margin: 5px 0 0 20px;">';
+                Object.entries(arg.evidence).forEach(([key, value]) => {
+                    html += `<li>${key.replace(/_/g, ' ')}: ${value}</li>`;
+                });
+                html += '</ul></div>';
+                html += `<p style="font-size: 0.9em; color: #6c757d;">💡 ${arg.interpretation}</p>`;
+                html += '</div>';
+            });
+
+            html += formatSources(sources);
+            return html;
+        }
+
+        function formatSources(sources) {
+            if (!sources || sources.length === 0) return '';
+
+            let html = '<div class="sources">';
+            html += '<h4>📚 Data Sources</h4>';
+            html += '<ul>';
+            sources.forEach(source => {
+                html += `<li>${source}</li>`;
+            });
+            html += '</ul>';
+            html += '</div>';
+            return html;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Allow Enter key
+        document.getElementById("query-input").addEventListener("keypress", (e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                sendQuery();
+            }
+        });
+    </script>
+</body>
+
+</html>
